@@ -72,7 +72,7 @@ def main():
 
         sleep(3)
 
-        input_link = bot.find_element(By.LINK_TEXT, "1000")
+        input_link = bot.find_element(By.LINK_TEXT, problem)
         input_link.click()
 
         sleep(3)

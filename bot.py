@@ -27,8 +27,9 @@ def main():
 
         email = "caiofaneco1999@gmail.com"
         password = "@Senha123"
-        problem = "1001"
-        resolution = "a = int(input())\nb = int(input())\nx = a + b\nprint('X =', x)"
+        problem = "1000"
+        # resolution = "a = int(input())\nb = int(input())\nx = a + b\nprint('X =', x)"
+        resolution = "print('Hello World!')"
 
         sleep(3)
 
@@ -71,7 +72,7 @@ def main():
 
         sleep(3)
 
-        input_link = bot.find_element(By.LINK_TEXT, "1001")
+        input_link = bot.find_element(By.LINK_TEXT, "1000")
         input_link.click()
 
         sleep(3)
@@ -93,7 +94,7 @@ def main():
         input_submit = bot.find_element(By.CSS_SELECTOR, ".send-green")
         input_submit.click()
 
-        sleep(30)
+        sleep(10)
 
         # # Busca pela confirmação de login
         # logged = bot.find_element(By.CSS_SELECTOR, ".post-title")
@@ -143,7 +144,7 @@ def main():
 
     finally:
         # Finaliza fechando o navegador
-        # bot.quit()
+        bot.quit()
 
         # Finaliza tarefa com o BotMaestro
         maestro.finish_task(

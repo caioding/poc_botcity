@@ -25,9 +25,10 @@ def main():
         # Acessa página Practice Test Automation
         bot.get("https://judge.beecrowd.com/pt/login/")
 
-        email = "caiofaneco1999@gmail.com"
-        password = "@Senha123"
-        problem = "1000"
+        #Insira o email, senha e número do problema abaixo
+        email = ""
+        password = ""
+        problem = ""
         # resolution = "a = int(input())\nb = int(input())\nx = a + b\nprint('X =', x)"
         resolution = "print('Hello World!')"
 
